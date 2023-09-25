@@ -10,6 +10,7 @@ import { User, UserSchema } from './schema/users/user.schema';
 import { LocalStrategy } from './auth/local.strategy';
 import { PassportModule } from '@nestjs/passport';
 import { JwtStrategy } from './auth/jwt.strategy';
+
 import {
   UserDairyFarmer,
   UserDairyFarmerSchema,
@@ -31,7 +32,7 @@ import { join } from 'path';
       secret: 'your_secret_key_here',
       signOptions: { expiresIn: '1d' }, // Token expiration time
     }),
-    MongooseModule.forRoot('mongodb://localhost/milk-mgmt'),
+    MongooseModule.forRoot('mongodb://127.0.0.1:27017/dairy'),
     MongooseModule.forFeature([
       {
         name: User.name,
