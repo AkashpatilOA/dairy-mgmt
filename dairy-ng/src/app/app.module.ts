@@ -17,6 +17,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatInputModule} from '@angular/material/input';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
+import { ViewReportComponent } from './components/view-report/view-report.component';
 
 
 
@@ -31,7 +32,8 @@ import {MatButtonModule} from '@angular/material/button';
     FooterComponent,
     SignupComponent,
     ProfileComponent,
-    ReportComponent
+    ReportComponent,
+    ViewReportComponent
   ],
   imports: [
     BrowserModule,

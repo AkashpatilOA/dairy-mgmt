@@ -6,6 +6,7 @@ import { LoginPageComponent } from './components/login-page/login-page.component
 import { SignupComponent } from './components/signup/signup.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { ReportComponent } from './components/report/report.component';
+import { ViewReportComponent } from './components/view-report/view-report.component';
 
 
 const routes: Routes = [
@@ -14,7 +15,8 @@ const routes: Routes = [
   { path: 'Login', component: LoginPageComponent },
   { path: 'Signup', component: SignupComponent },
   { path: 'profile', component: ProfileComponent },
-  { path: 'milk-report', component:ReportComponent}
+  { path: 'milk-report', component:ReportComponent},
+  { path: 'view-report', component:ViewReportComponent}
   
 ];
 
